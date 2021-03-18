@@ -20,7 +20,7 @@ namespace DevOcean.ConsoleApp
             var payCheck = taxSrvc.GetPayCheck(gross);
 
             Console.Clear();
-            Console.WriteLine(payCheck.NetSalary);
+            Console.WriteLine(payCheck);
         }
     }
 }

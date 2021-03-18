@@ -1,4 +1,6 @@
-﻿namespace DevOcean.Model
+﻿using System;
+
+namespace DevOcean.Model
 {
     public class PayCheck
     {
@@ -13,5 +15,12 @@
                 return GrossSalary - IncomeTax - ContributionTax;
             }
         }
+
+        public override string ToString() => 
+                   "Paycheck " + Environment.NewLine +
+                   $"Gross Salary: {GrossSalary}" + Environment.NewLine +
+                   $"Incomet Tax: {IncomeTax}" + Environment.NewLine +
+                   $"Contirbution Tax: {ContributionTax}" + Environment.NewLine +
+                   $"Net Amount: {NetSalary}";
     }
 }
